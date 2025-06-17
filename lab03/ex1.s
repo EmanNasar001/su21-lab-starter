@@ -4,7 +4,7 @@ n: .word 9
 
 .text
 main:
-    add t0, x0, x0
+    add t0, x0, x0  #I am editing this For Exercise 1
     addi t1, x0, 1
     la t3, n
     lw t3, 0(t3)
@@ -20,4 +20,4 @@ finish:
     addi a1, t0, 0
     ecall # print integer ecall
     addi a0, x0, 10
-    ecall # terminate ecall
+    ecall # terminate ecall        #LETS SEE IF IT GETS EDITED
