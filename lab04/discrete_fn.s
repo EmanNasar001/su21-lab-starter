@@ -77,6 +77,10 @@ main:
 # Think: why might having a1 be useful?
 f:
     # YOUR CODE GOES HERE!
+    addi a0, a0, 3      # convert input from [-3,3] to index [0,6]
+    slli a0, a0, 2      
+    add a0, a0, a1      
+    lw a0, 0(a0)  
 
     jr ra               # Always remember to jr ra after your function!
 
